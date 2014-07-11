@@ -50,6 +50,7 @@ router.get('/search/*', function(req, res) {
 });
 
 router.get('/:id/:title', function(req, res) {
+  console.log('TESTING');
     feedreader.getArticleById(req.params.id, function(post){
       var article = [];
       article[0] = post;
