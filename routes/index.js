@@ -31,8 +31,8 @@ router.get('/', function(req, res) {
     });
 });
 
-router.get('/id/*', function(req, res) {
-    getArticles.getArticlesByID(req.params[0], function(err, posts) {
+router.get('/id/:article_id/:title_slug', function(req, res) {
+    getArticles.getArticlesByID(req.params.article_id, function(err, posts) {
       res.render(
         'singleArticle', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
       );
@@ -49,17 +49,13 @@ router.get('/search/*', function(req, res) {
     });
 });
 
-router.get('/:id/:title', function(req, res) {
-  console.log('TESTING');
-  console.log('id: ' + req.params.id);
-  console.log('title: ' + req.params.title);
-    getArticles.getArticlesByID(req.params.id, function(err, post){
-      console.log('you have gotten to the callback');
-      console.log('here is the article title: ' + post.title);
-      res.render(
-        'singleArticle', {planetSpecificData: planetSpecificData, data: post, uri: 'http://www.planetnodejs.com/article/' + post.title}
-      );
-    });
+router.get('/:article_id/:title', function(req, res) {
+  getArticles.getArticlesByID(req.params.article_id, function(err, posts) {
+    res.render(
+      'singleArticle', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
+    );
+        
+  });
 });
 
 module.exports = router;
