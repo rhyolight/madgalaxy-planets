@@ -56,11 +56,8 @@ router.get('/:id/:title', function(req, res) {
     getArticles.getArticlesByID(req.params.id, function(err, post){
       console.log('you have gotten to the callback');
       console.log('here is the article title: ' + post.title);
-      var article = [];
-      console.log(post);
-      article[0] = post;
       res.render(
-        'singleArticle', {planetSpecificData: planetSpecificData, data: article, uri: 'http://www.planetnodejs.com/article/' + post.title}
+        'singleArticle', {planetSpecificData: planetSpecificData, data: post, uri: 'http://www.planetnodejs.com/article/' + post.title}
       );
     });
 });
