@@ -51,7 +51,10 @@ router.get('/search/*', function(req, res) {
 
 router.get('/:id/:title', function(req, res) {
   console.log('TESTING');
+  console.log('id: ' + req.params.id);
+  console.log('title: ' + req.params.title);
     getArticles.getArticleById(req.params.id, function(post){
+      console.log('you have gotten to the callback');
       var article = [];
       article[0] = post;
       res.render(
