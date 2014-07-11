@@ -53,9 +53,10 @@ router.get('/:id/:title', function(req, res) {
   console.log('TESTING');
   console.log('id: ' + req.params.id);
   console.log('title: ' + req.params.title);
-    getArticles.getArticlesByID(req.params.id, function(post){
+    getArticles.getArticlesByID(req.params.id, function(err, post){
       console.log('you have gotten to the callback');
       var article = [];
+      console.log(post);
       article[0] = post;
       res.render(
         'singleArticle', {planetSpecificData: planetSpecificData, data: article, uri: 'http://www.planetnodejs.com/article/' + post.title}
