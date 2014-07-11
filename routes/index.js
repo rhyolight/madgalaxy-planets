@@ -55,6 +55,7 @@ router.get('/:id/:title', function(req, res) {
   console.log('title: ' + req.params.title);
     getArticles.getArticlesByID(req.params.id, function(err, post){
       console.log('you have gotten to the callback');
+      console.log('here is the article title: ' + post.title);
       var article = [];
       console.log(post);
       article[0] = post;
