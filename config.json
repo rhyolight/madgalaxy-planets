@@ -242,6 +242,7 @@
       "planet": "planet-angular",
       "title": "Planet Angularjs",
       "keywords": "Angular, Angular.js, angular, JS, js, .js",
+      "feed_tag": "angularjs",
       "description": "PlanetAngularjs rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Angular",
@@ -257,6 +258,7 @@
       "planet": "planet-backbone",
       "title": "Planet Backbonejs",
       "keywords": "Backbone, Backbone.js, backbone, BackboneJS",
+      "feed_tag": "backbonejs",
       "description": "PlanetBackbone.js rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Backbone",
@@ -272,6 +274,7 @@
       "planet": "planet-ember",
       "title": "Planet Emberjs",
       "keywords": "JS, .js, Ember.js, Emberjs, EmberJS",
+      "feed_tag": "emberjs",
       "description": "PlanetEmberjs rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Ember",
@@ -287,6 +290,7 @@
       "planet": "planet-jquery",
       "title": "Planet JQuery",
       "keywords": "JS, .js, Jquery, JQuery",
+      "feed_tag": "jquery",
       "description": "PlanetJQuery rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet JQuery",
@@ -302,6 +306,7 @@
       "planet": "planet-node",
       "title": "Planet Nodejs",
       "keywords": "Node.js, NodeJS, Node",
+      "feed_tag": "node",
       "description": "Planet Node.js rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Node",

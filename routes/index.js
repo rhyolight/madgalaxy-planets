@@ -3,56 +3,47 @@ var router       = express.Router();
 var getArticles  = require('../lib/getArticles.js');
 var config       = require('../config.json');
 var planetName   = process.env.PLANET_NAME;
+var colors       = require('colors');
 
 var planetSpecificData = config.planetOptions[planetName];
+console.log('########This site is being built as: ' + planetName + ' ########');
 
-console.log(planetSpecificData);
-console.log('########This is: ' + planetName + ' ########');
+//validating all the parameters
+router.use(function(req, res, next) {
 
-// else if (req.query.page){
-//   console.log('Here is the page the user is requesting: ' + req.query.page);
-//   feedreader.getArticlesWithPageNum(req.query.page, function(posts) {    
-//     res.render(
-//       'index', {planetSpecificData: planetSpecificData, data: posts, uri: 'http://www.planetnodejs.com', page: req.query.page}
-//     );
-      
-//   });
+  //validating pageNum
+  if(req.query.pageNum && /^[0-9]+$/.test(req.query.pageNum)){
+    req.pageNum = req.query.pageNum;
+  }
+  else{
+    console.log('no pageNum provided, or not a valid pageNum - defaulting to 1');
+    req.pageNum = 1;
+  }
+  next(); 
+});
 
-// }
-
-/* GET home page. */
 router.get('/', function(req, res) {
-    getArticles.getMostRecentArticles(function(err, posts) {
-
+    getArticles.getArticlesByTag(req.pageNum, planetSpecificData.feed_tag, function(err, posts) {
       res.render(
-        'index', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
+        'index', {planetSpecificData: planetSpecificData, data: posts, uri: '', pageNum: req.pageNum}
       );
         
     });
 });
 
-router.get('/id/:article_id/:title_slug', function(req, res) {
-    getArticles.getArticlesByID(req.params.article_id, function(err, posts) {
+router.get('/search', function(req, res) {
+    getArticles.getArticlesBySearch(req.pageNum, req.searchString, function(err, posts) {
       res.render(
-        'singleArticle', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
-      );
-        
-    });
-});
-
-router.get('/search/*', function(req, res) {
-    getArticles.getArticlesBySearch(req.query.searchString, function(err, posts) {
-      res.render(
-        'index', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
+        'index', {planetSpecificData: planetSpecificData, data: posts, uri: '', pageNum: req.pageNum}
       );
         
     });
 });
 
 router.get('/:article_id/:title', function(req, res) {
-  getArticles.getArticlesByID(req.params.article_id, function(err, posts) {
+  getArticles.getArticlesByID(req.pageNum, req.params.article_id, function(err, posts) {
     res.render(
-      'singleArticle', {planetSpecificData: planetSpecificData, data: posts, uri: '', page: 1}
+      'singleArticle', {planetSpecificData: planetSpecificData, data: posts, uri: '', pageNum: req.pageNum}
     );
         
   });

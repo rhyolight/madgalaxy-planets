@@ -24,7 +24,6 @@ hr{
 .navbar {
     font-family: 'Open sans';
     background: #222 !important;
-    transition: all .2s ease-in-out;
 }
 .navbar-header {
     background-color: inherit;
