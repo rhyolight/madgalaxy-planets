@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style='height: calc( 100% - 158px)'>
 <head>
-<%- include head.ejs %>
+<%- include ./partials/head.ejs %>
 </head>
 <body style='height: calc( 100% )'>
   <div class="container" style='height: calc( 100% )'>
@@ -9,7 +9,7 @@
     <div class="row" >
       <div class="column col-sm-2" style='height: calc( 100% )'></div>
       <div id="articles" class="column col-sm-8 col-md-8 col-lg-8" style='height: calc( 100% )'>
-      <%- include navbar.ejs %>
+      <%- include ./partials/navbar.ejs %>
       <div class="column col-lg-12 centered" style="">
         <h1 class="text-center">Well ... this is unfortunate</h1>
         <p style="font-size:20px">It looks like the webpage you requested either does not exist, or we had an error retreiving it. Please scan over your link to make sure it is correct, or reload the page in a few seconds</p>
@@ -20,6 +20,6 @@
     </div>
   </div>
 
-  <%- include footer-scripts.ejs %>
+  <%- include ./partials/footer-scripts.ejs %>
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include head.ejs %>
+  <%- include ./partials/head.ejs %>
   <link rel="canonical" href="<%=uri%>" />
 </head>
 <body>
   <div class="container">
-    <%- include navbar.ejs %>
+    <%- include ./partials/navbar.ejs %>
     <div class="row">
       <div class="column col-sm-2"></div>
       <div id="articles" class="column col-sm-8 col-md-8 col-lg-8">
@@ -55,6 +55,6 @@
     <div class="footer-offset"></div>
   </div>
 
-  <%- include footer-scripts.ejs %>
+  <%- include ./partials/footer-scripts.ejs %>
 </body>
 </html>

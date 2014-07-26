@@ -19,6 +19,9 @@ router.use(function(req, res, next) {
     console.log('no pageNum provided, or not a valid pageNum - defaulting to 1');
     req.pageNum = 1;
   }
+  if(req.query.searchString){
+    req.searchString = req.query.searchString;
+  }
   next(); 
 });
 
