@@ -126,7 +126,7 @@ h1.post-title,
 h2.post-title {
     font-size: 1.8em;
     margin-bottom: 10px;
-    line-height: 30px;
+    line-height: 1.8em;
 }
 .post-title a {
     color: #606060;
@@ -397,7 +397,12 @@ input[type="color"]:focus{
 /*  BLOG
 /*-----------------------------------------------------------------------------------*/
 .classic-blog h2.post-title {
-    margin: 0
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    overflow: hidden;
+    max-height: 3em;
 }
 .classic-blog figure,
 .classic-blog iframe {
