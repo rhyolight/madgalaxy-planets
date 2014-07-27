@@ -113,15 +113,7 @@ hr{
     color: #f0f0f0
 }
 
-.sub-footer .footer-container .pull-right{
-    text-align: center !important;
-    float: none !important;
-}
-.sub-footer .footer-container .pull-left{
-    text-align: center !important;
-    float: none !important;
-}
-.sub-footer p{
+footer p{
     margin-bottom: 5px  !important;
 }
 .pagination{
@@ -149,12 +141,13 @@ html, body {
     height: 100%;
 }
 .footer-offset {
-    height: 205px;
+    height: 200px;
 }
-.footer {position: relative;
-    margin-top: -180px; /* negative value of footer height */
-    height: 150px;
-    clear:both;
+.footer {
+    position: relative;
+    margin-top: -200px;
+    height: 200px;
+    clear: both;
 } 
 /*-----------------------------------------------------------------------------------*/
 /*  Quick Look

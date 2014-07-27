@@ -27,8 +27,16 @@
     "colors": "*",
     "rss": "*"
   },
-  "devDependencies": {
-    "mocha": "~1.18.2",
-    "should": "~3.3.0"
+    "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-nodemon": "*",
+    "grunt-concurrent": "*"
   }
 }
