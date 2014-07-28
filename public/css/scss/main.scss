@@ -1,0 +1,37 @@
+// file - main.scss
+@import "commonStyles";
+html.planet_angular {
+    $accent_color: #e52a3a;
+    /*  
+      Styles for planet_angular
+    */
+    @import "planetSpecific";
+  }
+html.planet_backbone {
+    $accent_color: #0071b5;
+    /*  
+      Styles for planet_backbone
+    */
+    @import "planetSpecific";
+  }
+html.planet_ember {
+    $accent_color: #fa7f57;
+    /*  
+      Styles for planet_ember
+    */
+    @import "planetSpecific";
+  }
+html.planet_jquery {
+    $accent_color: #0769ad;
+    /*  
+      Styles for planet_jquery
+    */
+    @import "planetSpecific";
+  }
+html.planet_node {
+    $accent_color: #6ca02e;
+    /*  
+      Styles for planet_node
+    */
+    @import "planetSpecific";
+  }
