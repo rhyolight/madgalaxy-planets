@@ -65,4 +65,18 @@ router.get('/:article_id/:title', function(req, res) {
     });
 });
 
+router.get('/feed', function(req, res) {
+    getArticles.getRssFeedWithTag(req.pageNum, planetSpecificData.feed_tag, function(err, feed) {
+        res.set('Content-Type', 'text/xml');
+        res.send(feed);
+    });
+});
+router.get('/site.rss', function(req, res) {
+    getArticles.getArticlesByID(req.pageNum, planetSpecificData.feed_tag, function(err, feed) {
+        res.set('Content-Type', 'text/xml');
+        // Sending the feed as a response
+        res.send(feed);
+    });
+});
+
 module.exports = router;
