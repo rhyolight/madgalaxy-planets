@@ -4,7 +4,6 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -23,17 +22,6 @@ h2 {
   font-size: 22px;
   line-height: 28px;
 }
-h2.post-title {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  line-height: 1.8em;
-}
-.post-title a {
-  color: #606060 !important;
-}
-.post-title a:hover {
-  opacity: .8;
-}
 hr {
   border: none;
   border-bottom: 1px solid #e1e1e1;
@@ -42,29 +30,6 @@ hr {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#articles {
-    background-color: white;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-.post-description p {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 30px;
-    /* width: 100%;
-    */
-    word-wrap: break-word;
-}
-.classic-blog h2.post-title {
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: auto;
-  overflow: hidden;
-  max-height: 3em;
-}
-
 /* ----------------------------------------------------------------------------------- */
 /* BUTTON
 /*----------------------------------------------------------------------------------- */
@@ -200,6 +165,42 @@ input[type="text"]:focus {
     margin-right: 12px !important;
 }
 
+/* ----------------------------------------------------------------------------------- */
+/* POST
+/*----------------------------------------------------------------------------------- */
+h2.post-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  line-height: 1.8em;
+}
+.post-title a {
+  color: #606060 !important;
+}
+.post-title a:hover {
+  opacity: .8;
+}
+#articles {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.post-description p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 30px;
+    /* width: 100%;
+    */
+    word-wrap: break-word;
+}
+.classic-blog h2.post-title {
+  margin: 0;
+}
+.tag{
+  display: inline-block;
+  height: 30px;
+  border: 1px solid green;
+}
 /* ----------------------------------------------------------------------------------- */
 /* FOOTER
 /*----------------------------------------------------------------------------------- */
