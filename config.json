@@ -6,6 +6,8 @@
       "title": "Planet Angularjs",
       "keywords": "Angular, Angular.js, angular, JS, js, .js",
       "feed_tag": "angularjs",
+      "feed_url": "http://planetangular.herokuapp.com/feed"
+      "site_url": "http://planetangular.herokuapp.com"
       "description": "PlanetAngularjs rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Angular",
@@ -22,6 +24,8 @@
       "title": "Planet Backbonejs",
       "keywords": "Backbone, Backbone.js, backbone, BackboneJS",
       "feed_tag": "backbonejs",
+      "feed_url": "http://planetbackbone.herokuapp.com/feed"
+      "site_url": "http://planetbackbone.herokuapp.com"
       "description": "PlanetBackbone.js rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Backbone",
@@ -38,6 +42,8 @@
       "title": "Planet Emberjs",
       "keywords": "JS, .js, Ember.js, Emberjs, EmberJS",
       "feed_tag": "emberjs",
+      "feed_url": "http://planetember.herokuapp.com/feed"
+      "site_url": "http://planetember.herokuapp.com"
       "description": "PlanetEmberjs rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Ember",
@@ -54,6 +60,8 @@
       "title": "Planet JQuery",
       "keywords": "JS, .js, Jquery, JQuery",
       "feed_tag": "jquery",
+      "feed_url": "http://planetjquery.herokuapp.com/feed"
+      "site_url": "http://planetjquery.herokuapp.com"
       "description": "PlanetJQuery rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet JQuery",
@@ -70,6 +78,8 @@
       "title": "Planet Nodejs",
       "keywords": "Node.js, NodeJS, Node",
       "feed_tag": "node",
+      "feed_url": "http://planetnode.herokuapp.com/feed"
+      "site_url": "http://planetnode.herokuapp.com"
       "description": "PlanetNode.js rounds up the latest news from the community.",
       "navbarText": {
         "beginning": "Planet Node",
