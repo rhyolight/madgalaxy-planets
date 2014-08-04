@@ -29,25 +29,6 @@
                                     
                                     
                                 </div>
-                                <div class="tag-holder">
-                                    <form action="http://localhost:3000/api/v1/articles/id/<%=data._id%>/addTag" method='post'>
-                                        <input type="text" name="tag"><br>
-                                        <input type="submit" value="Submit">
-                                    </form>
-                                    <% for (tag in data.tags) { %>
-                                    <div class="tag">
-                                        <%=data.tags[tag]%>
-                                    </div>
-                                    <%}%>
-                                </div>
-                                <div class="tag-holder">
-
-                                    <% for (userTag in data.userAddedTags) { %>
-                                    <div class="tag">
-                                        <%=data.userAddedTags[userTag]%>
-                                    </div>
-                                    <%}%>
-                                </div>
                             </div>
                             <div class="in-depth">
                                 <div

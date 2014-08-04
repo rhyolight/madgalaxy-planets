@@ -274,6 +274,25 @@ html, body {
   .form-group {
     width: 65%;
     display: inline-block; } }
+.select2-choices {
+  padding: 0; }
+
+ul.select2-choices {
+  list-style: none; }
+
+.select2-search-choice {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px;
+  background: green; }
+
+.select2-search-field label {
+  display: none; }
+.select2-search-field li {
+  width: 100% !important; }
+.select2-search-field input {
+  width: 100% !important; }
+
 html.planet_angular {
   /*  
     Styles for planet_angular

@@ -39,23 +39,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <!--                     <ul class="pagination">
-                        <% if (pageNum == 1) { %>
-                        <li class="disabled"><a>&laquo;</a></li>
-                        <%} else{ %>
-                        <li><a href="?pageNum=<%=pageNum-1%>">&laquo;</a></li>
-                        <%} %>
-                        <li><a href="?pageNum=<%=pageNum%>"><%=pageNum%></a></li>
-                        <li><a href="?pageNum=<%=parseInt(pageNum) + 1%>">&raquo;</a></li>
-                    </ul> -->
                     <ul class="pagination">
                         <% if (pageNum == 1) { %>
                         <li class="disabled"><a>&laquo;</a></li>
                         <%} else{ %>
-                        <li><a id="pageBackward" data-pageNum="<%=parseInt(pageNum)-1%>">&laquo;</a></li>
+                        <li><a id="pageBackward" data-pageNum="<%=parseInt(pageNum)-1%>" onClick="return false;" href="search/?pageNum=<%=parseInt(pageNum)-1%>">&laquo;</a></li>
                         <%} %>
                         <li><a ><%=pageNum%></a></li>
-                        <li><a id="pageForward" data-pageNum="<%=parseInt(pageNum)+1%>">&raquo;</a></li>
+                        <li><a id="pageForward" data-pageNum="<%=parseInt(pageNum)+1%>" onClick="return false;" href="search/?pageNum=<%=parseInt(pageNum)+1%>">&raquo;</a></li>
                     </ul>
                 </div>
             </div>
