@@ -129,7 +129,7 @@ input[type="text"]:focus {
   background-repeat: no-repeat;
   padding-left: 105px;
   color: white;
-  background-position: right 25px top 4px;
+  background-position: right 0px top 4px;
   font-weight: 300; }
 
 .navbar-brand {
