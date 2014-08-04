@@ -2,6 +2,7 @@
 @import "commonStyles";
 html.planet_angular {
     $accent_color: #e52a3a;
+    $logo_image: '/images/logo-planet_angular.svg';
     /*  
       Styles for planet_angular
     */
@@ -9,6 +10,7 @@ html.planet_angular {
   }
 html.planet_backbone {
     $accent_color: #0071b5;
+    $logo_image: '/images/logo-planet_backbone.svg';
     /*  
       Styles for planet_backbone
     */
@@ -16,6 +18,7 @@ html.planet_backbone {
   }
 html.planet_ember {
     $accent_color: #fa7f57;
+    $logo_image: '/images/logo-planet_ember.svg';
     /*  
       Styles for planet_ember
     */
@@ -23,6 +26,7 @@ html.planet_ember {
   }
 html.planet_jquery {
     $accent_color: #0769ad;
+    $logo_image: '/images/logo-planet_jquery.svg';
     /*  
       Styles for planet_jquery
     */
@@ -30,6 +34,7 @@ html.planet_jquery {
   }
 html.planet_node {
     $accent_color: #6ca02e;
+    $logo_image: '/images/logo-planet_node.svg';
     /*  
       Styles for planet_node
     */

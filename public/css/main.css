@@ -126,8 +126,6 @@ input[type="text"]:focus {
 .logo {
   font-family: 'Open Sans', sans-serif;
   margin-top: 15px;
-  /* background-image: url('/images/planetnodejs-logo.svg');
-  */
   background-repeat: no-repeat;
   padding-left: 105px;
   color: white;
@@ -284,6 +282,8 @@ html.planet_angular {
   */ }
   html.planet_angular .logo span {
     color: #e52a3a; }
+  html.planet_angular .logo {
+    background-image: url("/images/logo-planet_angular.svg"); }
   html.planet_angular a {
     color: #e52a3a; }
   html.planet_angular .btn,
@@ -299,6 +299,8 @@ html.planet_backbone {
   */ }
   html.planet_backbone .logo span {
     color: #0071b5; }
+  html.planet_backbone .logo {
+    background-image: url("/images/logo-planet_backbone.svg"); }
   html.planet_backbone a {
     color: #0071b5; }
   html.planet_backbone .btn,
@@ -314,6 +316,8 @@ html.planet_ember {
   */ }
   html.planet_ember .logo span {
     color: #fa7f57; }
+  html.planet_ember .logo {
+    background-image: url("/images/logo-planet_ember.svg"); }
   html.planet_ember a {
     color: #fa7f57; }
   html.planet_ember .btn,
@@ -329,6 +333,8 @@ html.planet_jquery {
   */ }
   html.planet_jquery .logo span {
     color: #0769ad; }
+  html.planet_jquery .logo {
+    background-image: url("/images/logo-planet_jquery.svg"); }
   html.planet_jquery a {
     color: #0769ad; }
   html.planet_jquery .btn,
@@ -344,6 +350,8 @@ html.planet_node {
   */ }
   html.planet_node .logo span {
     color: #6ca02e; }
+  html.planet_node .logo {
+    background-image: url("/images/logo-planet_node.svg"); }
   html.planet_node a {
     color: #6ca02e; }
   html.planet_node .btn,

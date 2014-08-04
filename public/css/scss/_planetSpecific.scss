@@ -5,6 +5,9 @@
 .logo span {
     color: $accent_color;
 }
+.logo{
+	background-image: url($logo_image);
+}
 a {
     color: $accent_color;
 }
