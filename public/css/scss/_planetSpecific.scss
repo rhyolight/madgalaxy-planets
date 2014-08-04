@@ -7,6 +7,7 @@
 }
 .logo{
 	background-image: url($logo_image);
+	background-position: $background_position_desktop;
 }
 a {
     color: $accent_color;
@@ -14,4 +15,10 @@ a {
 .btn,
 .btn-submit {
     background: $accent_color !important;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        background-position: $background_position_mobile;
+    }
 }

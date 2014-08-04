@@ -34,12 +34,33 @@ module.exports = function(grunt) {
         watch: {
             files: './public/css/scss/*.scss',
             tasks: ['sass']
+        },
+
+
+
+
+
+
+        notify: {
+            sass: {
+                options: {
+                    title: 'Task Complete',
+                    message: 'Compiled SASS'
+                }
+            },
+            nodemon: {
+                options: {
+                    title: 'Task Complete',
+                    message: 'Starting app and watching for changes'
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-env');
+    grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-contrib-watch')
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-nodemon');
-    grunt.registerTask('default', ['env', 'concurrent']);
+    grunt.registerTask('default', ['notify', 'env', 'concurrent']);
 };
