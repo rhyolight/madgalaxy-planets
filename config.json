@@ -6,9 +6,10 @@
       "title": "Planet Angularjs",
       "keywords": "Angular, Angular.js, angular, JS, js, .js",
       "feed_tag": "angularjs",
-      "feed_url": "http://planetangular.herokuapp.com/feed",
-      "site_url": "http://planetangular.herokuapp.com",
+      "feed_url": "http://www.planetangularjs.com/feed",
+      "site_url": "http://www.planetangularjs.com/",
       "description": "PlanetAngularjs rounds up the latest news from the community.",
+      "ga_code": "",
       "navbarText": {
         "beginning": "Planet Angular",
         "end": "js"
@@ -24,9 +25,10 @@
       "title": "Planet Backbonejs",
       "keywords": "Backbone, Backbone.js, backbone, BackboneJS",
       "feed_tag": "backbonejs",
-      "feed_url": "http://planetbackbone.herokuapp.com/feed",
-      "site_url": "http://planetbackbone.herokuapp.com",
+      "feed_url": "http://www.planetbackbonejs.com/feed",
+      "site_url": "http://www.planetbackbonejs.com/",
       "description": "PlanetBackbone.js rounds up the latest news from the community.",
+      "ga-code": "",
       "navbarText": {
         "beginning": "Planet Backbone",
         "end": "js"
@@ -42,9 +44,10 @@
       "title": "Planet Emberjs",
       "keywords": "JS, .js, Ember.js, Emberjs, EmberJS",
       "feed_tag": "emberjs",
-      "feed_url": "http://planetember.herokuapp.com/feed",
-      "site_url": "http://planetember.herokuapp.com",
+      "feed_url": "http://www.planetemberjs.com/feed",
+      "site_url": "http://www.planetemberjs.com/",
       "description": "PlanetEmberjs rounds up the latest news from the community.",
+      "ga-code": "",
       "navbarText": {
         "beginning": "Planet Ember",
         "end": "js"
@@ -60,9 +63,10 @@
       "title": "Planet JQuery",
       "keywords": "JS, .js, Jquery, JQuery",
       "feed_tag": "jquery",
-      "feed_url": "http://planetjquery.herokuapp.com/feed",
-      "site_url": "http://planetjquery.herokuapp.com",
+      "feed_url": "hhttp://www.planetjquery.org/feed",
+      "site_url": "http://www.planetjquery.org/",
       "description": "PlanetJQuery rounds up the latest news from the community.",
+      "ga-code": "",
       "navbarText": {
         "beginning": "Planet JQuery",
         "end": ""
@@ -78,9 +82,10 @@
       "title": "Planet Nodejs",
       "keywords": "Node.js, NodeJS, Node",
       "feed_tag": "node",
-      "feed_url": "http://planetnode.herokuapp.com/feed",
-      "site_url": "http://planetnode.herokuapp.com",
+      "feed_url": "http://planetnodejs.com/feed",
+      "site_url": "http://planetnodejs.com",
       "description": "PlanetNode.js rounds up the latest news from the community.",
+      "ga-code": "UA-33396402-5",
       "navbarText": {
         "beginning": "Planet Node",
         "end": "js"
