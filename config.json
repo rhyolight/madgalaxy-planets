@@ -28,7 +28,7 @@
       "feed_url": "http://www.planetbackbonejs.com/feed",
       "site_url": "http://www.planetbackbonejs.com/",
       "description": "PlanetBackbone.js rounds up the latest news from the community.",
-      "ga-code": "",
+      "ga_code": "",
       "navbarText": {
         "beginning": "Planet Backbone",
         "end": "js"
@@ -47,7 +47,7 @@
       "feed_url": "http://www.planetemberjs.com/feed",
       "site_url": "http://www.planetemberjs.com/",
       "description": "PlanetEmberjs rounds up the latest news from the community.",
-      "ga-code": "",
+      "ga_code": "",
       "navbarText": {
         "beginning": "Planet Ember",
         "end": "js"
@@ -66,7 +66,7 @@
       "feed_url": "hhttp://www.planetjquery.org/feed",
       "site_url": "http://www.planetjquery.org/",
       "description": "PlanetJQuery rounds up the latest news from the community.",
-      "ga-code": "",
+      "ga_code": "",
       "navbarText": {
         "beginning": "Planet JQuery",
         "end": ""
@@ -85,7 +85,7 @@
       "feed_url": "http://planetnodejs.com/feed",
       "site_url": "http://planetnodejs.com",
       "description": "PlanetNode.js rounds up the latest news from the community.",
-      "ga-code": "UA-33396402-5",
+      "ga_code": "UA-33396402-5",
       "navbarText": {
         "beginning": "Planet Node",
         "end": "js"

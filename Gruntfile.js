@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             dev: {
                 NODE_ENV: 'development',
                 DEST: 'temp',
-                PLANET_NAME: 'planet_angular'
+                PLANET_NAME: 'planet_node'
             }
         },
         concurrent: {
