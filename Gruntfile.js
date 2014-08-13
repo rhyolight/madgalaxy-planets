@@ -8,7 +8,6 @@ module.exports = function(grunt) {
             dev: {
                 NODE_ENV: 'development',
                 DEST: 'temp',
-                DEBUG: 'server,feedreader:*,api_v1,router:*',
                 PLANET_NAME: 'planet_angular'
             }
         },
