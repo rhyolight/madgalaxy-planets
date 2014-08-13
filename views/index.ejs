@@ -13,7 +13,9 @@
                         <% for(var i=0; i<data.length; i++) { %>
                         <div class="post">
                             <div class ="quick-look">
-                                <h2 class="post-title"><a href="/article/<%=data[i]._id%>/<%=data[i].slug%>"><%= data[i].title %></a></h2>
+                                <h2 class="post-title"><a href="/article/<%=data[i]._id%>/<%=data[i].slug%>">
+                                    <%= data[i].title %></a>
+                                </h2>
                                 <div class="meta">
                                     <div class="post-id" style="display:none"><%=data[i]._id%></div>
                                     <span class="date">Posted on <span class="displayDate"><%=data[i].displayDate%></span></span>
