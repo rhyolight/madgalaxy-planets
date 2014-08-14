@@ -17,15 +17,16 @@
                                 <div class="meta">
                                     <div class="post-id" style="display:none"><%=data._id%></div>
                                     <span class="date">Posted on <span class="displayDate"><%=data.displayDate%></span></span>
-                                    <% if(data.author) { %>
-                                    <span class="author">
-                                    | Author:
-                                    <a href="/search/?searchString=<%=data.author%>">
-                                        <%=data.author%>
-                                    </a>
-                                    </span>
+
+                                    <% if(data.author && data.author != 'undefined') { %>
+                                        <span class="author">
+                                        | Author:
+                                        <a href="/search/?searchString=<%=data.author%>">
+                                            <%=data.author%>
+                                        </a>
+                                        </span>
                                     <% } %>
-                                    <span>| Views: <%=data[i].views%></span>
+                                    <span>| Views: <%=data.views%></span>
                                     <span class="">| Source: <a href="<%= data.link %>">link</a></span>
                                     
                                     

@@ -61,6 +61,7 @@ router.get('/article/:article_id/:title', function(req, res) {
                 pageNum: req.pageNum
             }
         );
+        console.log('test');
         getArticles.increaseViewCount(req.params.article_id);
     });
 });
