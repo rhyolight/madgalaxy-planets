@@ -379,6 +379,6 @@ html.planet_node {
     background: #6ca02e !important; }
   @media (max-width: 480px) {
     html.planet_node .logo {
-      background-position: right 35px top 4px; } }
+      background-position: right -20px top 5px; } }
 
 /*# sourceMappingURL=main.css.map */
