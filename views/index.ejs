@@ -10,30 +10,35 @@
                 <div id="articles" class="column col-sm-8 col-md-8 col-lg-8">
                     <%- include ./partials/navbar.ejs %>
                     <div class="classic-blog">
-                        <% for(var i=0; i<data.length; i++) { %>
-                        <div class="post">
-                            <div class ="quick-look">
-                                <h2 class="post-title"><a href="/article/<%=data[i]._id%>/<%=data[i].slug%>">
-                                    <%= data[i].title %></a>
-                                </h2>
-                                <div class="meta">
-                                    <div class="post-id" style="display:none"><%=data[i]._id%></div>
-                                    <span class="date">Posted on <span class="displayDate"><%=data[i].displayDate%></span></span>
-                                    <% if(data[i].author && data[i].author !== 'undefined' ) { %>
-                                        <span class="author">
-                                        | Author:
-                                            <%=data[i].author%>
-                                        </span>
-                                    <% } %>
-                                    <span>| Views: <%=data[i].views%></span>
-                                    <span class="">| Source: <a href="<%= data[i].link %>">link</a></span>
+                        <% if(data.length == 0) {%>
+                            <h1 class="text-center">No results found.</h1>
+                        <% } else{%>
+
+                            <% for(var i=0; i<data.length; i++) { %>
+                                <div class="post">
+                                    <div class ="quick-look">
+                                        <h2 class="post-title"><a href="/article/<%=data[i]._id%>/<%=data[i].slug%>">
+                                            <%= data[i].title %></a>
+                                        </h2>
+                                        <div class="meta">
+                                            <div class="post-id" style="display:none"><%=data[i]._id%></div>
+                                            <span class="date">Posted on <span class="displayDate"><%=data[i].displayDate%></span></span>
+                                            <% if(data[i].author && data[i].author !== 'undefined' ) { %>
+                                                <span class="author">
+                                                | Author:
+                                                    <%=data[i].author%>
+                                                </span>
+                                            <% } %>
+                                            <span>| Views: <%=data[i].views%></span>
+                                            <span class="">| Source: <a href="<%= data[i].link %>">link</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <% if(i != data.length-1 ) {%>
-                        <!--This is to prevent an hr tag at the bottom of page-->
-                        <hr />
-                        <% } %>
+                                <% if(i != data.length-1 ) {%>
+                                    <!--This is to prevent an hr tag at the bottom of page-->
+                                    <hr />
+                                <% } %>
+                            <% } %>
                         <% } %>
                     </div>
                 </div>
