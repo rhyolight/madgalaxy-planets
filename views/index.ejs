@@ -12,6 +12,7 @@
                     <div class="classic-blog">
                         <% if(data.length == 0) {%>
                             <h1 class="text-center">No results found.</h1>
+                            <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
                         <% } else{%>
 
                             <% for(var i=0; i<data.length; i++) { %>
